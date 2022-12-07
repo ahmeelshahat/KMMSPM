@@ -10,9 +10,9 @@ kotlin {
     android()
     multiplatformSwiftPackage {
         packageName("Shared")
-        swiftToolsVersion("5.3")
+        swiftToolsVersion("5.6")
         targetPlatforms {
-            iOS { v("13") }
+            iOS { v("14") }
         }
         outputDirectory(File(rootDir, "/"))
     }
