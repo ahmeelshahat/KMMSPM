@@ -7,8 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C62757272940B944001B82E4 /* shared.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C62757242940B8CC001B82E4 /* shared.framework */; };
-		C62757282940B944001B82E4 /* shared.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C62757242940B8CC001B82E4 /* shared.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C68C5ED32940CFF400EDF2B5 /* Shared in Frameworks */ = {isa = PBXBuildFile; productRef = C68C5ED22940CFF400EDF2B5 /* Shared */; };
 		C69603882940B5CD00A60A62 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69603872940B5CD00A60A62 /* AppDelegate.swift */; };
 		C696038A2940B5CD00A60A62 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69603892940B5CD00A60A62 /* SceneDelegate.swift */; };
 		C696038C2940B5CD00A60A62 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C696038B2940B5CD00A60A62 /* ViewController.swift */; };
@@ -17,22 +16,7 @@
 		C69603942940B5CF00A60A62 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C69603922940B5CF00A60A62 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		C62757292940B944001B82E4 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				C62757282940B944001B82E4 /* shared.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
-		C62757242940B8CC001B82E4 /* shared.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = shared.framework; sourceTree = "<group>"; };
 		C69603842940B5CD00A60A62 /* iosa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iosa.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C69603872940B5CD00A60A62 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C69603892940B5CD00A60A62 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -48,7 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C62757272940B944001B82E4 /* shared.framework in Frameworks */,
+				C68C5ED32940CFF400EDF2B5 /* Shared in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,7 +66,6 @@
 		C69603862940B5CD00A60A62 /* iosa */ = {
 			isa = PBXGroup;
 			children = (
-				C62757242940B8CC001B82E4 /* shared.framework */,
 				C69603872940B5CD00A60A62 /* AppDelegate.swift */,
 				C69603892940B5CD00A60A62 /* SceneDelegate.swift */,
 				C696038B2940B5CD00A60A62 /* ViewController.swift */,
@@ -104,13 +87,15 @@
 				C69603802940B5CD00A60A62 /* Sources */,
 				C69603812940B5CD00A60A62 /* Frameworks */,
 				C69603822940B5CD00A60A62 /* Resources */,
-				C62757292940B944001B82E4 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = iosa;
+			packageProductDependencies = (
+				C68C5ED22940CFF400EDF2B5 /* Shared */,
+			);
 			productName = iosa;
 			productReference = C69603842940B5CD00A60A62 /* iosa.app */;
 			productType = "com.apple.product-type.application";
@@ -139,6 +124,9 @@
 				Base,
 			);
 			mainGroup = C696037B2940B5CD00A60A62;
+			packageReferences = (
+				C68C5ED12940CFF400EDF2B5 /* XCRemoteSwiftPackageReference "KMMSPM" */,
+			);
 			productRefGroup = C69603852940B5CD00A60A62 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -388,6 +376,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C68C5ED12940CFF400EDF2B5 /* XCRemoteSwiftPackageReference "KMMSPM" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ahmeelshahat/KMMSPM";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C68C5ED22940CFF400EDF2B5 /* Shared */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C68C5ED12940CFF400EDF2B5 /* XCRemoteSwiftPackageReference "KMMSPM" */;
+			productName = Shared;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C696037C2940B5CD00A60A62 /* Project object */;
 }

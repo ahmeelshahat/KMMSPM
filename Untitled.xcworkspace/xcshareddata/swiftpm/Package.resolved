@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "kmmspm",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/ahmeelshahat/KMMSPM",
+      "state" : {
+        "branch" : "main",
+        "revision" : "cb683dd4c3c2833a33e6e772a5bb201476cf6ebf"
+      }
+    }
+  ],
+  "version" : 2
+}
